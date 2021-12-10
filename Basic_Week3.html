@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+      h1 {
+        text-align: center;
+        color: hsl(181, 28%, 37%);
+        font-size: 41px;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #90F6D7;
+        color: black;
+        background: #35BCBF;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #5585B5;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: #53A8B6;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        📚 Reading for a Healthier You 📚
+      </h1>
+      <h2>
+       From improving empathy and creativity to staving off dementia, 
+       there are countless benefits to reading.
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/290/original/library.jpeg?1638901267"
+        alt="Library"
+      />
+      <p>
+        Did you know that reading can enhance brain connectivity and function?
+        Research shows that stories impact the brain both psychologically and neurologically.  
+        A study in which participants’ brains were scanned before, during, and five days after reading a novel found ongoing neurological changes. 
+        The results showed that there were changes in the brain’s resting state after participants had finished reading the novel.
+        The study’s lead, American neuroscientist Professor Gregory Berns, explains: 
+        “Even though the participants were not actually reading the novel while they were in the scanner, they retained this heightened connectivity. We call that a ‘shadow activity’, almost like muscle memory. 
+        The neural changes that we found associated with physical sensation and movement systems suggest that reading a novel can transport you into the body of the protagonist. We already know that good stories can put you in someone else’s shoes in a figurative sense. 
+        Now we’re seeing that something may also be happening biologically.”
+      </p>
+      <a
+        href="https://www.sacap.edu.za/blog/applied-psychology/benefits-of-reading/#:~:text=Reading%20has%20been%20shown%20to,of%20depression%20than%20non%2Dreaders."
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on about healthy 
+        impacts of reading from The South African College of Applied Psychology
+      </a>
+      <button class="buy-button">
+        🧐 Interested in Joining a Book Club?
+      </button>
+      <p class="footer">
+        This page was built by Dr. Jennifer Forrester
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let type = prompt("What is your favorit genera of book?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email, meanwhile happy reading! "
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
